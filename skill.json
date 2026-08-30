@@ -1,0 +1,38 @@
+{
+  "name": "genpark-autonomous-software-engineering-lifecycle-agent-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous software engineering lifecycle agent orchestrating issue diagnosis, environment sandboxing, and automated PR generation.",
+  "author": "genpark",
+  "category": "autonomous-swe",
+  "tags": [
+    "devin",
+    "autonomous-coder",
+    "software-engineer-agent",
+    "ci-cd-pr",
+    "end-to-end-developer"
+  ],
+  "inputs": {
+    "github_issue_url": {
+      "type": "string"
+    },
+    "target_branch": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "devin_execution_id": {
+      "type": "string"
+    },
+    "terminal_commands_executed": {
+      "type": "integer"
+    },
+    "ci_build_status": {
+      "type": "string"
+    },
+    "pull_request_created_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
